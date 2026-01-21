@@ -2,7 +2,7 @@ import { MetadataRoute } from 'next'
 import { productCategories, getAllProducts } from '@/lib/products'
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://www.bombayskyhigh.in'
+  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://www.bombayskyhigh.in '
   
   // Current date for lastModified
   const currentDate = new Date()
