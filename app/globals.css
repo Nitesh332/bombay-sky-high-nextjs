@@ -1,0 +1,139 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #f4f6f8;
+  line-height: 1.6;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #94a3b8;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #64748b;
+}
+
+/* Logo Gradient Text */
+.logo-gradient {
+  background: linear-gradient(135deg, #38bdf8, #0ea5e9);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Hero Background Pattern */
+.hero-pattern::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1920&h=1080&fit=crop') center/cover;
+  opacity: 0.1;
+}
+
+/* Button Gradients */
+.btn-gradient {
+  background: linear-gradient(135deg, #38bdf8, #0ea5e9);
+}
+
+.btn-gradient:hover {
+  box-shadow: 0 8px 25px rgba(56, 189, 248, 0.4);
+}
+
+/* Feature Icon Gradient */
+.icon-gradient {
+  background: linear-gradient(135deg, #38bdf8, #0ea5e9);
+}
+
+/* Card Hover Effects */
+.card-hover {
+  transition: all 0.3s ease;
+}
+
+.card-hover:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+/* Product Badge Gradient */
+.badge-gradient {
+  background: linear-gradient(135deg, #38bdf8, #0ea5e9);
+}
+
+/* Author Avatar Gradient */
+.avatar-gradient {
+  background: linear-gradient(135deg, #38bdf8, #0ea5e9);
+}
+
+/* CTA Section Gradient */
+.cta-gradient {
+  background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+}
+
+/* Contact Hero Gradient */
+.contact-hero-gradient {
+  background: linear-gradient(135deg, #0f172a 0%, #1e3a5f 100%);
+}
+
+/* Form Focus States */
+.form-input:focus {
+  outline: none;
+  border-color: #38bdf8;
+  background: white;
+  box-shadow: 0 0 0 4px rgba(56, 189, 248, 0.1);
+}
+
+/* FAQ Accordion Animation */
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
+
+.faq-answer.open {
+  max-height: 200px;
+}
+
+/* Category Pill Active State */
+.category-pill.active,
+.category-pill:hover {
+  background: linear-gradient(135deg, #38bdf8, #0ea5e9);
+  color: white;
+}
+
+/* Smooth Scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Hide scrollbar for category nav on mobile but keep functionality */
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.hide-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
