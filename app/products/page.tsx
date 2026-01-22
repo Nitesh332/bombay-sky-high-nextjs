@@ -147,6 +147,17 @@ export default function ProductsPage() {
 
   const handleCategoryClick = useCallback((categoryId: string) => {
     setActiveCategory(categoryId)
+    // Scroll to the section with offset for sticky header
+    const section = document.getElementById(categoryId)
+    if (section) {
+      const headerOffset = 150 // Account for navbar + category bar
+      const elementPosition = section.getBoundingClientRect().top
+      const offsetPosition = elementPosition + window.pageYOffset - headerOffset
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: 'smooth'
+      })
+    }
   }, [])
 
   const handleSearchChange = useCallback((e: React.ChangeEvent<HTMLInputElement>) => {
@@ -244,10 +255,10 @@ export default function ProductsPage() {
               <FontAwesomeIcon icon={faEnvelope} /> Request Quote
             </Link>
             <a
-              href="tel:+919876543210"
+              href="tel:+917039683427"
               className="bg-transparent text-white px-7 py-4 rounded-lg font-semibold border-2 border-white inline-flex items-center gap-2 transition-all hover:bg-white hover:text-dark"
             >
-              <FontAwesomeIcon icon={faPhone} /> Call: +91 98765 43210
+              <FontAwesomeIcon icon={faPhone} /> Call: +91 70396  83427
             </a>
           </div>
         </div>

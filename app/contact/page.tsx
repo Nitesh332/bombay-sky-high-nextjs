@@ -28,7 +28,7 @@ const contactInfo = [
   {
     icon: faPhoneAlt,
     title: 'Phone Number',
-    lines: ['+91 7039683427', '+91 9869753645'],
+    lines: ['+91 7039683427'],
   },
   {
     icon: faEnvelope,
@@ -332,13 +332,13 @@ export default function ContactPage() {
                 <h4 className="text-dark mb-4 font-semibold">Quick Contact</h4>
                 <div className="flex flex-col sm:flex-row gap-3">
                   <a
-                    href="tel:+919876543210"
+                    href="tel:+917039683427"
                     className="flex items-center justify-center gap-2 px-5 py-3 rounded-lg font-semibold bg-dark text-white transition-all hover:-translate-y-0.5"
                   >
                     <FontAwesomeIcon icon={faPhone} /> Call Now
                   </a>
                   <a
-                    href="https://wa.me/919876543210"
+                    href="https://wa.me/917039683427"
                     className="flex items-center justify-center gap-2 px-5 py-3 rounded-lg font-semibold bg-green-500 text-white transition-all hover:-translate-y-0.5"
                   >
                     <FontAwesomeIcon icon={faWhatsapp} /> WhatsApp

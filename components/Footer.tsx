@@ -116,7 +116,7 @@ export default function Footer() {
             </li>
             <li className="flex items-center gap-3">
               <FontAwesomeIcon icon={faPhone} className="text-primary w-5" />
-              +91 98765 43210
+              +91 70396 83427
             </li>
             <li className="flex items-center gap-3">
               <FontAwesomeIcon icon={faEnvelope} className="text-primary w-5" />

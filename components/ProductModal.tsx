@@ -187,7 +187,7 @@ export default function ProductModal({ isOpen, onClose, product }: ProductModalP
                   Request Quote
                 </a>
                 <a
-                  href="tel:+919876543210"
+                  href="tel:+917039683427"
                   className="flex-1 bg-slate-100 text-slate-700 px-6 py-3 rounded-lg font-semibold text-center inline-flex items-center justify-center gap-2 transition-all hover:bg-slate-200"
                 >
                   <FontAwesomeIcon icon={faPhone} />

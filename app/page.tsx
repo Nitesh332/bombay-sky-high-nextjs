@@ -269,7 +269,7 @@ export default function HomePage() {
               <FontAwesomeIcon icon={faEnvelope} /> Contact Us
             </Link>
             <a
-              href="tel:+919876543210"
+              href="tel:+917039683427"
               className="bg-transparent text-white px-7 py-4 rounded-lg font-semibold border-2 border-white inline-flex items-center gap-2 transition-all hover:bg-white hover:text-dark"
             >
               <FontAwesomeIcon icon={faPhone} /> Call Now
