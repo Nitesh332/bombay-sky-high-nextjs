@@ -1,8 +1,9 @@
 import { MetadataRoute } from 'next'
 import { productCategories, getAllProducts } from '@/lib/products'
+import { locations } from '@/lib/locations'
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://www.bombayskyhigh.in '
+  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://www.bombayskyhigh.in'
   
   // Current date for lastModified
   const currentDate = new Date()
@@ -22,6 +23,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.9,
     },
     {
+      url: `${baseUrl}/locations`,
+      lastModified: currentDate,
+      changeFrequency: 'weekly',
+      priority: 0.9,
+    },
+    {
       url: `${baseUrl}/contact`,
       lastModified: currentDate,
       changeFrequency: 'monthly',
@@ -35,6 +42,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
   ]
   
+  // Dynamic location pages for local SEO
+  const locationPages: MetadataRoute.Sitemap = locations.map((location) => ({
+    url: `${baseUrl}/locations/${location.slug}`,
+    lastModified: currentDate,
+    changeFrequency: 'monthly' as const,
+    priority: 0.8,
+  }))
+
   // Dynamic product category pages (if you have individual category pages)
   const categoryPages: MetadataRoute.Sitemap = productCategories.map((category) => ({
     url: `${baseUrl}/products#${category.id}`,
@@ -52,5 +67,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.6,
   }))
   
-  return [...staticPages, ...categoryPages, ...productPages]
+  return [...staticPages, ...locationPages, ...categoryPages, ...productPages]
 }
