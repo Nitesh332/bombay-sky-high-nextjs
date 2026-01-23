@@ -40,7 +40,7 @@ export const productCategories: ProductCategory[] = [
     badge: 'Main Products',
     icon: 'faCubes',
     products: [
-      { id: generateId('Scaffolding Tie Rod'), title: 'Scaffolding Tie Rod', description: 'High-strength tie rods for secure scaffolding connections.', image: '/images/scaffolding-tie-rod.png', category: 'scaffolding-products' },
+      { id: generateId('Scaffolding Tie Rod'), title: 'Scaffolding Tie Rod', description: 'High-strength tie rods for secure scaffolding connections.', image: '/images/Scaffolding-Tie-Rod.png', category: 'scaffolding-products' },
       { id: generateId('Adjustable Steel Props'), title: 'Adjustable Steel Props', description: 'Heavy-duty adjustable props for construction support.', image: '/images/AdjustableSteelProps.jpg', category: 'scaffolding-products' },
       { id: generateId('Push Pull Prop'), title: 'Push Pull Prop', description: 'Versatile push-pull props for wall alignment.', image: '/images/push-pull-prop.jpg', category: 'scaffolding-products' },
       { id: generateId('Steel Scaffolding Parts'), title: 'Steel Scaffolding Parts', description: 'Complete range of steel scaffolding components.', image: '/images/Steel-Scaffolding-Parts-images.jpg', category: 'scaffolding-products' },
